@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}Help Those Helping Others</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon"
+          type="image/png"
+          href="/images/favicon.png">
+    {% block meta %}
+    {% endblock %}
+</head>
+<body>
+<header class="bg-gradient-to-r from-violet-500 to-violet-900">
+    <div class="app-content pb-4">
+        <h1>Help Those Helping Others</h1>
+        <p class="text-xl mb-6 mt-8 text-white">
+            At Christmas time, we typically think about giving gifts to friends, family, and loved ones.
+            But what about those who don't have anyone to receive a gift from, or aren't able to give gifts to others?
+            What about those who are desperately in need and a present is the last thing on their mind?
+        </p>
+        <p class="text-xl text-white">
+            If you want to help others in need, but don't know how, here are six charities from around the world who care for and support people every day of the year, people in need for so many reasons.
+            By donating to one or more of them, you can help them to help those less fortunate, less privileged than yourself?
+        </p>
+    </div>
+</header>
+<main id="app">
+    {% block content %}
+    {% endblock %}
+</main>
+<footer class="mt-0 mb-8 pb-8">
+    <hr class="mt-0">
+    <span class="text-slate-500">Designed and built by <a href="https://matthewsetter.com">Matthew Setter</a>. &copy; Twilio {{ "now"|date("Y") }}. All rights reserved.</span>
+    <!--
+    <div>Social media icon credits</div>
+    <ul class="list-outside list-disc ml-4">
+        <li><a href="https://www.flaticon.com/free-icons/twitter-social-badge"
+               title="twitter social badge icons">Twitter social badge icons created by Grow studio - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/instagram"
+               title="instagram icons">Instagram icons created by riajulislam - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/linkedin"
+               title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></li>
+    </ul>
+    -->
+</footer>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

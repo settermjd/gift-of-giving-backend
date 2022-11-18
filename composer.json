@@ -1,0 +1,37 @@
+{
+  "name": "settermjd/twilio-gift-of-giving",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Matthew Setter",
+      "email": "matthew@matthewsetter.com",
+      "homepage": "https://matthewsetter.com",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "laminas/laminas-diactoros": "^2.19",
+    "laminas/laminas-i18n": "^2.18",
+    "laminas/laminas-inputfilter": "^2.19",
+    "league/commonmark": "^2.3",
+    "php-di/slim-bridge": "^3.2",
+    "sendgrid/sendgrid": "^8.0",
+    "slim/psr7": "^1.5",
+    "slim/slim": "4.*",
+    "slim/twig-view": "^3.3",
+    "stripe/stripe-php": "^9.6",
+    "twig/markdown-extra": "^3.4",
+    "twilio/sdk": "^6.41",
+    "vlucas/phpdotenv": "^5.4",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "files": ["src/helpers.php"],
+    "psr-4": {
+      "MyApp\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 211.66666 211.66666"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="donation-amount-5.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     height="210mm"
+     units="px"
+     width="800px"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="326.59794"
+     inkscape:cy="252.66337"
+     inkscape:window-width="2550"
+     inkscape:window-height="1449"
+     inkscape:window-x="991"
+     inkscape:window-y="363"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="18.496828"
+       y="24.983526"
+       width="762.59531"
+       height="751.36716"
+       id="rect9801" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.57684717,0,0,0.57309072,-125.04214,-56.994295)"
+       id="text9799"
+       style="font-style:normal;font-weight:normal;font-size:458.667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9801);fill:#000000;fill-opacity:1;stroke:none"
+       x="115.35475"
+       y="0"><tspan
+         x="266.78054"
+         y="451.54468"
+         id="tspan68936"><tspan
+           style="font-weight:900;font-family:Lato;-inkscape-font-specification:'Lato Heavy';text-align:center;text-anchor:middle"
+           id="tspan68934">5</tspan></tspan></text>
+  </g>
+</svg>

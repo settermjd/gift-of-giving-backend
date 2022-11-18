@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Gift of Giving</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="content">
+    <header class="bg-[url('/images/hero/istockphoto-1341447410-1024x1024.jpg')] bg-no-repeat bg-top bg-cover bg-gradient-to-r from-violet-500 to-violet-900">
+        <div class="app-content pb-4">
+            <h1>Help Those Helping Others</h1>
+            <p class="text-xl mb-6 mt-8 text-white">
+                At Christmas time, we typically think about giving gifts to friends, family, and loved ones.
+                But what about those who don't have anyone to receive a gift from, or aren't able to give gifts to others?
+                What about those who are desperately in need and a present is the last thing on their mind?
+            </p>
+            <p class="text-xl text-white">
+                If you want to help others in need, but don't know how, here are six charities from around the world who care for and support people every day of the year, people in need for so many reasons.
+                By donating to one or more of them, you can help them to help those less fortunate, less privileged than yourself?
+            </p>
+        </div>
+    </header>
+    <main>
+        <div id="pick-a-charity" class="mt-10">
+            <h2 class="mb-6">Our Charities</h2>
+            <div id="our-charities" class="my-10 grid grid-cols-3 gap-8">
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/asrc-logo.png"
+                         alt="The Asylum Seeker Resource Center (ASRC)">
+                </div>
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/reubens-retreat-logo.png"
+                         alt="Reuben's Retreat">
+                </div>
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/the-birthday-bank.png"
+                         alt="The Birthday Bank">
+                </div>
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/msf.png"
+                         alt="Medecins sans Frontieres">
+                </div>
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/pankind-header-logo.png"
+                         alt="Pancreatic Cancer Research Foundation">
+                </div>
+                <div class="text-center p-4 mx-auto">
+                    <img src="/images/charities/mjf-logo.png"
+                         alt="Michael J. Fox Foundation for Parkinson’s Research"
+                        class="hover:cursor-pointer">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-8">
+
+        <form>
+            <div id="payment-details">
+                <h2 class="mb-8">Pick Your Charity</h2>
+                <select tabindex="1">
+                    <option>The Asylum Seeker Resource Center (ASRC)</option>
+                    <option>Reuben's Retreat</option>
+                    <option>The Birthday Bank</option>
+                    <option>Medecins sans Frontieres</option>
+                    <option>Pancreatic Cancer Research Foundation</option>
+                    <option>Michael J. Fox Foundation for Parkinson’s Research</option>
+                </select>
+            </div>
+            <div id="payment-details">
+                <h2 class="mb-6">Enter Your Payment Information</h2>
+                <div>
+                    <div class="choose-your-friend-container">
+                        <fieldset>
+                            <legend>Personal Information:</legend>
+                            <div>
+                                <label for="email-address" class="my-2 block">Email Address *:</label>
+                                <input type="text"
+                                       name="email-address"
+                                       id="email-address"
+                                       tabindex="2"
+                                       class="w-full">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="first-name" class="my-2 block">First Name *:</label>
+                                    <input type="text"
+                                           name="first-name"
+                                           tabindex="3"
+                                           id="first-name" class="w-full">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="my-2 block">Last Name *:</label>
+                                    <input type="text"
+                                           name="last-name"
+                                           tabindex="4"
+                                           id="last-name"
+                                           class="w-full">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-8">
+                            <legend>Contact Information</legend>
+                            <div class="grid grid-cols-1">
+                                <div>
+                                    <label for="address" class="my-2 block">Address *:</label>
+                                    <input type="text"
+                                           name="address"
+                                           tabindex="5"
+                                           id="address"
+                                           class="w-full">
+                                </div>
+                                <div>
+                                    <label for="apartment" class="my-2 block">Apartment, suite, etc *:</label>
+                                    <input type="text"
+                                           name="apartment"
+                                           id="apartment"
+                                           tabindex="6"
+                                           class="w-full">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <div class="w-full">
+                                        <label for="city" class="my-2 block">City *:</label>
+                                        <input type="text"
+                                               name="city"
+                                               id="city"
+                                               tabindex="7"
+                                               class="w-full">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="city" class="my-2 block">Country *:</label>
+                                        <select name="country"
+                                                id="country"
+                                                tabindex="9"
+                                                class="w-full">
+                                            <option>Germany</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="state" class="my-2 block">State / Province *:</label>
+                                    <input type="text"
+                                           name="state"
+                                           tabindex="8"
+                                           id="state"
+                                           class="w-full">
+                                    <label for="postcode" class="my-2 block">Postal Code *:</label>
+                                    <input type="text"
+                                           name="postcode"
+                                           id="postcode"
+                                           tabindex="10"
+                                           class="w-full">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset id="payment-details">
+                            <legend>Payment Details</legend>
+                            <label for="name-on-card" class="my-2 block">Name on the Card *:</label>
+                            <input type="text"
+                                   name="name-on-card"
+                                   id="name-on-card"
+                                   tabindex="11"
+                                   class="w-full">
+                            <label for="card-number" class="my-2 block">Card Number *:</label>
+                            <input type="text"
+                                   name="card-number"
+                                   id="card-number"
+                                   tabindex="12"
+                                   class="w-full">
+                            <div class="flex">
+                                <div class="mr-2" style="width: 75%;">
+                                    <label for="expiration-date" class="my-2 block">Expiration date*: (mm/yy)</label>
+                                    <input type="text"
+                                           name="expiration-date"
+                                           tabindex="13"
+                                           id="expiration-date">
+                                </div>
+                                <div>
+                                    <label for="cvc" class="my-2 block">CVC *:</label>
+                                    <input type="text"
+                                           name="cvc"
+                                           tabindex="14"
+                                           id="cvc"
+                                           maxlength="3"
+                                           size="3">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <input type="submit"
+                       name="submit"
+                       tabindex="15"
+                       value="Donate Now">
+                <input type="reset"
+                       name="reset"
+                       tabindex="16"
+                       value="Cancel">
+            </div>
+        </form>
+        <hr>
+    </main>
+</div>
+</body>
+</html>
