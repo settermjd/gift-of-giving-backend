@@ -1,0 +1,19 @@
+{% extends "modal.html.twig" %}
+
+{% block title %}Thank You | {% endblock %}
+
+{% block content %}
+    <div class="my-4 bg-purple-800 px-6 py-4 rounded-md">
+        <div id="pick-a-charity" class="my-2">
+            <h2 class="text-white">Thank You For Donating!</h2>
+            <div>
+                <p class="text-xl mb-4 leading-relaxed text-white">
+                    Thank you for donating {{ donation_amount }} to {{ charity_name }}.
+                    We're sure that your donation will help them continue their hard work {{ charity_summary }}.
+                </p>
+                <p class="text-xl mb-6 text-white">Best,</p>
+                <p class="font-bold text-xl text-white">The Gift of Giving Team.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
