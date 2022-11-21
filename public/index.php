@@ -194,22 +194,6 @@ $container->set('view', function() {
     return $twig;
 });
 
-/**
- * The Twilio Client object for interacting with the Programmable SMS API.
- *
- * @see https://www.twilio.com/docs/sms/tutorials/how-to-send-sms-messages-php
- */
-$container->set(Client::class, function (): Client {
-    return new Client(
-        $_SERVER["TWILIO_ACCOUNT_SID"],
-        $_SERVER["TWILIO_AUTH_TOKEN"]
-    );
-});
-
-$container->set(StripeClient::class, function (): StripeClient {
-    return new StripeClient($_SERVER['STRIPE_API_KEY']);
-});
-
 $container->set('charities', function(): array {
     $asrcDescription = <<<EOF
 [The Asylum Seeker Resource Centre (ASRC)](https://asrc.org.au) is Australia's largest human rights organisation providing support to people seeking asylum. 
@@ -362,49 +346,6 @@ $app = AppFactory::create();
 $app->add(new ContentLengthMiddleware());
 $app->add(TwigMiddleware::createFromContainer($app));
 
-$app->get('/donation', function (Request $request, Response $response, array $args): Response {
-    $data = $request->getParsedBody();
-    $donationAmount = $data['donation-amount'] ?? $data['donation-amount-other'];
-    $charity = $data['charity-name'];
-
-    return $this
-        ->get('view')
-        ->render(
-            $response,
-            'donation.html.twig',
-            [
-                'charity' => $charity,
-                'donationAmount' => $donationAmount
-            ]
-        );
-});
-
-$app->post(
-    '/create-charge',
-    function (Request $request, Response $response, array $args): Response
-    {
-        Stripe::setApiKey(
-            'sk_test_51LrH7iEXWvYZ89TYAzunk3OVbpjLXkSysDBngBSEJfVNFJIRi6fDQ4I98RNJSgXkaEU2HWhUv8UdRqQ0E40SnpBl00BVNBCnN0'
-        );
-
-        $jsonObj = json_decode($request->getBody()->getContents());
-        $paymentIntent = PaymentIntent::create([
-            'amount' => $jsonObj->amount,
-            'automatic_payment_methods' => [
-                'enabled' => true,
-            ],
-            'currency' => 'eur',
-            'metadata' => [
-                'charity' => $jsonObj->charity
-            ]
-        ]);
-
-        return new JsonResponse([
-            'clientSecret' => $paymentIntent->client_secret,
-        ]);
-    }
-);
-
 $app->get('/', function (Request $request, Response $response, array $args): Response {
     //$nonce = sha1(random_bytes(32));
     $data = [
@@ -427,15 +368,5 @@ $app->get('/charities', function (Request $request, Response $response, array $a
     $charities = $this->get('charities');
     return new JsonResponse($charities);
 });
-
-/**
- * The "thank you" route, where the user is redirected to after they've submitted the form
- */
-$app->get('/thank-you',
-    function (Request $request, Response $response, array $args): Response
-    {
-        return $this->get('view')->render($response, 'thank-you.html.twig', []);
-    }
-);
 
 $app->run();
