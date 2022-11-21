@@ -30,10 +30,9 @@
     {% block content %}
     {% endblock %}
 </main>
-<footer class="mt-0 mb-8 pb-8">
+<footer class="mt-0 mb-8 pb-8 text-slate-500">
     <hr class="mt-0">
-    <span class="text-slate-500">Designed and built by <a href="https://matthewsetter.com">Matthew Setter</a>. &copy; Twilio {{ "now"|date("Y") }}. All rights reserved.</span>
-    <!--
+    <div class="mb-1">Designed and built by <a href="https://matthewsetter.com">Matthew Setter</a>. &copy; Twilio {{ "now"|date("Y") }}. All rights reserved.</div>
     <div>Social media icon credits</div>
     <ul class="list-outside list-disc ml-4">
         <li><a href="https://www.flaticon.com/free-icons/twitter-social-badge"
@@ -43,7 +42,6 @@
         <li><a href="https://www.flaticon.com/free-icons/linkedin"
                title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></li>
     </ul>
-    -->
 </footer>
 {% block scripts %}
 {% endblock %}

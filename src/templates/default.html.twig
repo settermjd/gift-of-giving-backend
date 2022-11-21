@@ -23,8 +23,8 @@
 {%  endblock %}
 
 {% block content %}
-    <div class="lg:flex lg:flex-row mt-4">
-        <div id="pick-a-charity" class="mt-6 lg:w-4/6 lg:mr-4">
+    <div class="mt-4">
+        <div id="pick-a-charity" class="mt-6">
             <h2 class="mb-3">Pick a Charity</h2>
             <div id="charities-list">
                 {% for code, charity in charities %}
@@ -86,6 +86,7 @@
                 {% endfor %}
             </div>
         </div>
+        <!--
         <div id="donate">
             <h2 class="mb-3">Donate</h2>
             <form id="donation-form" class="donate-wrapper" action="/donation" method="post">
@@ -146,5 +147,6 @@
                 </div>
             </form>
         </div>
+        -->
     </div>
 {% endblock %}
