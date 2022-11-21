@@ -144,7 +144,7 @@
     }
 
     #charities-list {
-        @apply mt-4 mb-8 grid grid-cols-1 lg:grid-cols-2 gap-4;
+        @apply mt-4 mb-8 grid grid-cols-1 lg:grid-cols-3 gap-4;
     }
 
     #key-actions {
