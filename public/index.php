@@ -18,6 +18,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use SendGrid\Mail\Mail;
 use Slim\Factory\AppFactory;
+use Slim\Middleware\ContentLengthMiddleware;
 use Slim\Views\Twig;
 use Slim\Views\TwigMiddleware;
 use Stripe\PaymentIntent;
@@ -358,7 +359,7 @@ EOF;
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 
-$app->add(new \Slim\Middleware\ContentLengthMiddleware());
+$app->add(new ContentLengthMiddleware());
 $app->add(TwigMiddleware::createFromContainer($app));
 
 $app->get('/donation', function (Request $request, Response $response, array $args): Response {
