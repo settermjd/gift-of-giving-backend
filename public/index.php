@@ -372,7 +372,9 @@ $app->get('/', function (Request $request, Response $response, array $args): Res
 
 $app->get('/charities', function (Request $request, Response $response, array $args): Response {
     $charities = $this->get('charities');
-    return new JsonResponse($charities);
+    return new JsonResponse($charities, 200, [
+        'Access-Control-Allow-Origin' => '*'
+    ]);
 });
 
 $app->run();
