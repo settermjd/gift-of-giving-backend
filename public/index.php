@@ -248,6 +248,7 @@ EOF;
             ],
             'email' => 'admin@asrc.org.au',
             'website' => 'https://asrc.org.au',
+            'donation_link' => 'https://donate.asrc.org.au/noonebehind',
             'social' => [
                 'instagram' => 'asrc1',
                 'linkedin' => 'company/asylum-seeker-resource-centre',
@@ -260,6 +261,7 @@ EOF;
             'description' => $mjfDescription,
             'email' => 'info@michaeljfox.org',
             'website' => 'https://www.michaeljfox.org/',
+            'donation_link' => 'https://give.michaeljfox.org/give/421686/#!/donation/checkout',
             'actions' => [
                 "Build improved knowledge about the lived experience of Parkinson's disease",
                 "Find an objective test for Parkinson's",
@@ -278,6 +280,7 @@ EOF;
             'description' => $mecfsDescription,
             'email' => 'program_inquiries@newyork.msf.org',
             'website' => 'https://www.me-cfs.net/',
+            'donation_link' => '',
             'actions' => [
                 "Provides details about symptoms, diagnosis, important research, available therapies",
                 "Support when dealing with government agencies and departments",
@@ -297,6 +300,7 @@ EOF;
             'description' => $pcrfDescription,
             'email' => ' info@pankind.org.au',
             'website' => 'https://pankind.org.au/',
+            'donation_link' => 'https://pankind.org.au/donate/',
             'actions' => [
                 "Invest in research to accelerate treatments and improve survival",
                 "Advocate on behalf of the pancreatic cancer community for equitable optimal and earlier access to diagnosis, treatment, and care",
@@ -314,6 +318,7 @@ EOF;
             'description' => $rrDescription,
             'email' => 'contact@reubensretreat.org',
             'website' => 'https://www.reubensretreat.org/',
+            'donation_link' => 'https://www.reubensretreat.org/get-involved/donate/',
             'actions' => [
                 "Provide practical and emotional support and promise to walk side by side with a family on their journey",
                 "Deliver a bespoke and tailor-made support package for each family and guidance to help them navigate their journey",
@@ -332,6 +337,7 @@ EOF;
             'description' => $tbbDescription,
             'email' => 'laura@thebirthdaybank.org.uk',
             'website' => 'https://thebirthdaybank.org.uk/',
+            'donation_link' => 'https://thebirthdaybank.org.uk/#features',
             'social' => [
                 'instagram' => 'thebirthdaybank',
                 'linkedin' => 'in/lauracunningham3',
