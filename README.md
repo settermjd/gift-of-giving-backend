@@ -31,3 +31,8 @@ To check that the API is working, make a curl request to http://localhost:8080/c
 If working properly, you will get a JSON response of all the charities in the system printed to the terminal.
 
 Then, go and set up [the front end](https://github.com/settermjd/gift-of-giving-frontend).
+
+### New to Docker and Docker Compose?
+
+If you are, then grab a copy of my free book: [Deploy with Docker Compose](https://deploywithdockercompose.com). 
+It will show you all you need to get up and running with Docker Compose, enabling you to deploy an application both locally and to any remote environment.
